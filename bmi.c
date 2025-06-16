@@ -8,7 +8,15 @@
     scanf ("%f", &peso_0);
     printf ("Ingrese su altura en metros: ");
     scanf ("%f", &Alt_1);
-                                
+
+    while (peso_0 < 0 || Alt_1 <0) {
+      printf ("Ingrese un numero correcto");
+      printf ("\nIngrese su peso en kg: ");
+      scanf ("%f", &peso_0);
+      printf ("Ingrese su altura en metros: ");
+      scanf ("%f", &Alt_1);
+    }
+    
       Imc_2 = peso_0 / (Alt_1 * Alt_1) ; 
                                         
     printf ("Su indice de masa corporal: %.3f \n ", Imc_2);
