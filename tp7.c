@@ -10,10 +10,10 @@ int main (void)
     printf ("A continuacion, ingrese 5 productos con su codigo y precio:\n");
 
     for (int i=1; i<=N; i++) {
-    printf ("\nIngrese un codigo entre 1-999999 (%d): ", i );
+    printf ("\nIngrese un codigo entre 1-9999999 (%d): ", i );
     scanf ("%d", &code[i-1]);
-        while (code [i-1]>999999) {
-            printf ("\nIngrese un codigo entre 1-999999 (%d): ", i );
+        while (code [i-1]>9999999) {
+            printf ("\nIngrese un codigo entre 1-9999999 (%d): ", i );
             scanf ("%d", &code[i-1]);
         }
     printf ("\nIngrese el precio (%d): ", i );
